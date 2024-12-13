@@ -1,9 +1,5 @@
 import './styles.css';
+import handlers from './handlers';
 
-function component() {
-  const element = document.createElement('div');
-  element.textContent = 'Hello, Project Template!';
-  return element;
-}
-
-document.getElementById('app').appendChild(component());
+handlers.load();
+handlers.clickHandler(); 
